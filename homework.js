@@ -56,7 +56,10 @@ console.table(wolfy)
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+const Turtles = ['Donatello','Leonardo','Raphael','Michaelangelo']
+for(let t of Turtles){
+    console.log(t.toUpperCase())
+}
 
 ////////////////////////////////
 // Methods, Revisited
