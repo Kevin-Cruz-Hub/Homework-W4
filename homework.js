@@ -64,8 +64,48 @@ for(let t of Turtles){
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 
+'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 
+'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 
+'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 
+'Harry Potter', 'Imitation of Life', 'Snatch', ];
 
-
+// 1.
+favMovies.sort();
+console.table(favMovies)
+// The sort() menthod put the items in favMovies in alphabetical order
+// It wasn't permanently altered
+console.log('============================================================================')
+// 2.
+favMovies.pop();
+// 3.
+favMovies.push('Guardians of the Galaxy')
+// 4.
+favMovies.reverse();
+// 5.
+favMovies.shift();
+// 6.
+let add = favMovies.unshift()
+console.log(add)
+// The amount of elements in the array is returned
+// 7.
+let change = favMovies.indexOf('Django Unchained')
+favMovies[change] = 'Avatar'
+// The array was not permanently altered
+// 8.
+let half = Math.ceil(favMovies.length / 2)
+const second = favMovies.slice(half)
+// 9.
+console.table(second)
+// The list that was printed to the console was derived from the the main list
+// 10.
+console.table(favMovies)
+// 11.
+let findThis = favMovies.indexOf('Fast and Furious')
+console.log(findThis)
+// You get a -1 if the value you are searching for is not found
+// 12.
+// No becasue you dont want to overwrite the array thus losing access to all the elements within
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
